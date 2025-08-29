@@ -1,3 +1,9 @@
+use leetcode::grep_main;
+
 fn main() {
-    println!("Hello World");
+    // test some path
+    if let Err(e) = grep_main() {
+        eprintln!("{e}");
+        std::process::exit(1)
+    }
 }
